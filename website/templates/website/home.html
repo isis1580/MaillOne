@@ -1,0 +1,28 @@
+{% extends "website/base.html" %}
+{% load static %}
+{% block content %}
+<section class="hero" id="home">
+  <div class="hero-left">
+    <h1>Connecting the Future.</h1>
+    <p>Le premier lien entre vous et la technologie de demain — infrastructure, sécurité, cloud et solutions digitales sur mesure.</p>
+    <div class="hero-ctas">
+      <a class="cta" href="#contact">Learn More</a>
+      <a class="btn-ghost" href="#services">Our Expertise</a>
+    </div>
+  </div>
+  <div class="logo-big">
+    <img src="{% static '../website/images/logo.jpg' %}" alt="Logo MaillOne" />
+  </div>
+</section>
+
+<hr class="sep">
+
+<section id="services" class="services">
+  <h2>Our Expertise</h2>
+  <div class="cards">
+    <div class="card"><h3>Infrastructure & Réseaux</h3><p>Installation, administration et optimisation des serveurs et réseaux d'entreprise.</p></div>
+    <div class="card"><h3>Cybersécurité</h3><p>Pentest, audits, gestion des risques.</p></div>
+    <div class="card"><h3>Cloud & Virtualisation</h3><p>Déploiement cloud hybride, sauvegarde et PRA.</p></div>
+  </div>
+</section>
+{% endblock %}

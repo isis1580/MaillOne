@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>MaillOne — The First Link</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+</head>
+<body>
+  <div class="frame">
+    <header>
+      <div class="brand">
+        <a href="/" class="logo">
+          <img src="{% static 'website/images/logo.png' %}" alt="MaillOne" />
+        </a>
+        <div class="brand-text">
+          <div class="brand-name">MaillOne</div>
+          <div class="brand-sub">The First Link</div>
+        </div>
+      </div>
+
+      <nav class="nav-center">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="cta" href="#contact">Get in touch</a>
+    </header>
+
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+      <div class="copyright">© MaillOne — The First Link</div>
+      <div class="social">LinkedIn • GitHub</div>
+    </footer>
+  </div>
+</body>
+</html>

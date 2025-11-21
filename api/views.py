@@ -1,4 +1,5 @@
 from django.http import JsonResponse
 
 def home(request):
-    return JsonResponse({"message": "J'ai reussi !"})
+    return JsonResponse({"message": "API OK !"})
+
