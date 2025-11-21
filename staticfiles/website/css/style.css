@@ -1,0 +1,29 @@
+:root{
+  --page-bg:#0f1113;
+  --primary:#1D4ED8;
+  --accent:#00FF9D;
+  --muted:#9aa2b8;
+  --white:#fff;
+}
+body{margin:0;background:linear-gradient(180deg,var(--page-bg) 0%, #07080a 100%);color:var(--white);font-family:Inter,Arial,Helvetica}
+.frame{max-width:1400px;margin:28px auto;padding:18px;background:linear-gradient(180deg,#0b0b0d,#07080a);border-radius:22px;overflow:hidden}
+header{display:flex;align-items:center;justify-content:space-between;padding:20px 40px}
+.brand{display:flex;align-items:center;gap:14px}
+.brand img{width:40px;height:40px}
+.brand-name{font-weight:800;font-size:18px}
+.brand-sub{font-size:12px;color:var(--muted)}
+.nav-center{position:absolute;left:50%;transform:translateX(-50%);top:20px;display:flex;gap:28px}
+.nav-center a{color:var(--muted);text-decoration:none;font-weight:600}
+.cta{background:var(--primary);padding:10px 16px;border-radius:12px;color:white;text-decoration:none;font-weight:700}
+.hero{display:grid;grid-template-columns:1fr 520px;gap:36px;align-items:center;padding:34px 0}
+.hero h1{font-size:92px;line-height:0.98;margin:0 0 18px;font-weight:800;letter-spacing:-1px}
+.hero p{color:var(--muted);font-size:20px;margin:0 0 22px}
+.btn-ghost{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:12px 16px;border-radius:12px;color:var(--muted);font-weight:700}
+.logo-big img{width:380px;height:380px}
+.sep{height:2px;border:0;background:linear-gradient(90deg, rgba(29,78,216,0.06), rgba(0,0,0,0));margin:30px 0;border-radius:2px}
+.section-title{text-align:center;margin-top:42px;margin-bottom:14px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:12px}
+.card{background:linear-gradient(180deg,#0b0b10,#07070a);padding:26px;border-radius:12px}
+footer{padding:30px 36px;margin-top:48px;border-top:1px solid rgba(255,255,255,0.03);display:flex;justify-content:space-between}
+@media (max-width:1120px){.hero{grid-template-columns:1fr 360px}.hero h1{font-size:56px}.nav-center{display:none}}
+@media (max-width:720px){.hero{grid-template-columns:1fr}.logo-big img{width:180px;height:180px}.hero h1{font-size:36px}.cards{grid-template-columns:1fr}}
