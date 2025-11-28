@@ -129,9 +129,9 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # optionnel — aide Django à trouver les fichiers si problème
-STATICFILES_DIRS = [
-    BASE_DIR / "website" / "static",
-]
+#STATICFILES_DIRS = [
+#    BASE_DIR / "website" / "static",
+#]
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
