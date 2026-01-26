@@ -30,6 +30,9 @@ ALLOWED_HOSTS = [
     'maillone-1.onrender.com',
     'localhost',
     '127.0.0.1',
+    "maillone.fr",
+    "www.maillone.fr",
+    "maillone-1.onrender.com",
 ]
 
 
